@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tablist {
+  background-color: #48535e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+}
+
+.tablist * {
+  display: inline;
+  text-decoration: none;
+}
+
+.tab {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
+  text-decoration: none;
+  font-size: larger;
+  margin: 40px;
+  width: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  margin-top: 80px;
+  padding: 30px;
+  background-color: lightblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: grid;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-right: 15px;
+}
+
+th, td {
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.table-layout {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
 }
