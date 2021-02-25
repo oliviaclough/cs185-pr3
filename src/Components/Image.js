@@ -30,6 +30,23 @@ class Image extends Component {
     closeImg(){
         this.setState({modalDisplay: 'none'});
     }
+
+    topOnClick = () => {
+        console.log("scrolling"); 
+        window.scrollTo(0,0); 
+    }
+
+    componentDidMount = () => {
+        var top_button = document.getElementById("top_button");
+        document.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                top_button.style.display = "block";
+            } else {
+                top_button.style.display = "none";
+            }
+        };
+    }
+
     render(){
         return (
             <div>
@@ -51,6 +68,7 @@ class Image extends Component {
                         <img  class="modal-content" id='currentImg' src={this.state.modalImg}></img>
                     </div>
                 </body>
+                <button id="top_button" onClick={() => this.topOnClick()} className="top">Back To Top</button>
             </div>
         )
     }

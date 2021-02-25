@@ -2,6 +2,7 @@ import './App.css';
 import Tablist from './Components/TabList';
 import Body from './Components/Body';
 import { Component } from 'react';
+import ReactDOM from "react-dom";
 
 class App extends Component {
   constructor(){
@@ -38,17 +39,16 @@ class App extends Component {
       title:'Email'
     },
   ]
-  return (
-    <div className="App">
-      <div className="body">
-        <Body activeTab={this.state.active}/>
+    return (
+      <div className="App">
+        <div className="tablist">
+          <Tablist tabs={tabs} activeTab={this.state.active} ctab={this.changeTab}/>
+        </div>
+        <div className="body">
+          <Body activeTab={this.state.active}/>
+        </div>
       </div>
-      <div className="tablist">
-        <Tablist tabs={tabs} activeTab={this.state.active} ctab={this.changeTab}/>
-      </div>
-    </div>
-  )
-
+    );
   }
 }
 

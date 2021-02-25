@@ -37,21 +37,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .modal-content {
     margin: auto;
     display:block;
-    width: 80%;
-    max-width: 700px;
-    max-height: 700px;
+    max-width: 500px;
+    /*max-height: 700px;*/
 }
 
 .modal-content-vid {
     margin: auto;
     display:block;
-    width: 80%;
     max-width: 700px;
-    max-height: 700px;    
+    max-height: 700px;
 }
