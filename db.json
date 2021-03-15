@@ -27,6 +27,13 @@
       "textInfor": "https://ucsb.zoom.us/j/8311826784",
       "important": false,
       "id": 4
+    },
+    {
+      "title": "group zoom",
+      "day": "03/25/2021",
+      "important": false,
+      "textInfor": "http://zoom.us",
+      "id": 5
     }
   ]
 }

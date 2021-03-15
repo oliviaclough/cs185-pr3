@@ -1,0 +1,88 @@
+/*styling for zoom meeting*/
+.zoom-container {
+    max-width: 700px;
+    margin: 40px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+  }
+.btn {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding: 15px 32px;
+    display: inline-block;
+    border: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task {
+    background-color:lavender;
+    padding: 10px;
+    margin: 20px;
+}
+
+ .task-grid {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .task-item {
+     flex-basis: auto;
+     flex: none;
+     align-self: auto;
+   }
+
+ .task-button {
+     padding: 10px;   
+ }
+
+ .task-important {
+     background-color:lavender;
+     padding: 10px;
+     margin: 20px;
+     border-style: double;
+ }
+
+ .addTask {
+     margin: 20px;
+ }
+
+ .addTask-element {
+     margin: 10px 0;
+ }
+
+ .addTask-element label {
+     display: block;
+     font-size: larger;
+ }
+
+ .addTask-element input {
+     width: 100%;
+     margin: 5px 0;
+     height: 30px;
+     font-size: medium;
+ }
+
+ .addTask-check {
+     margin: 10px 0;
+     display: flex;
+ }
+
+ .addTask-check label {
+     font-size: larger;
+     margin-bottom: 20px;
+
+ }
+
+ .addTask-check input {
+     height: 25px;
+     margin:  0 20px;
+ }

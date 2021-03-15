@@ -4,7 +4,7 @@ import Table from "./Table";
 import Email from "./Email";
 import Image from "./Image";
 import Video from "./Video";
-import Schedule from "./Schedule";
+import Zoom from "./ScheduleManager/Zoom";
 import '../App.css';
 
 class Body extends Component {
@@ -28,7 +28,7 @@ class Body extends Component {
                 return  <Email/>
             }
             if(activeTab == 6){
-                return <Schedule/>
+                return <Zoom/>
             }
             else {
                 return <div></div>
