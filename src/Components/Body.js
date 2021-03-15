@@ -4,6 +4,7 @@ import Table from "./Table";
 import Email from "./Email";
 import Image from "./Image";
 import Video from "./Video";
+import Schedule from "./Schedule";
 import '../App.css';
 
 class Body extends Component {
@@ -25,6 +26,9 @@ class Body extends Component {
             } 
             if(activeTab === 5) {
                 return  <Email/>
+            }
+            if(activeTab == 6){
+                return <Schedule/>
             }
             else {
                 return <div></div>

@@ -78,3 +78,13 @@ p {
   background-color: #48535e;
   color: white;
 }
+
+.zoom-container {
+   max-width: 500px;
+   margin: 30px auto;
+   overflow: auto;
+   min-height: 300px;
+   border: 1px solid #4682b4;
+   padding: 30px;
+   border-radius: 5px;
+ }
